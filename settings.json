@@ -94,7 +94,7 @@
         },
         {
             "before": [":","!"],
-            "commands": ["workbench.action.togglePanel"]
+            "commands": [":split, :terminal"]
         },
         {
             "before": ["<space>","f","e"],
