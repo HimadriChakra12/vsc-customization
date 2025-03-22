@@ -57,20 +57,8 @@
             "commands": [":q"] // Quit
         },
         {
-            "before": ["<space>","t","f","f"],
-            "commands": ["fuzzy-finder.find"]
-        },
-        {
-            "before":["<space","f","/"],
-            "commands": ["fuzzily.fzf"]
-        }
-        {
             "before": ["<space>","g","g"],
             "commands": ["gg"] // Go to top
-        },
-        {
-            "before": ["<space>","f"],
-            "commands": ["workbench.action.quickOpen"] // VS Code Quick Open (FZF if integrated)
         },
         {
             "before": ["<space>","v"], // Example: Vertical split
@@ -79,6 +67,24 @@
         {
             "before": ["<space>","h"], // Example: Horizontal split
             "commands": [":split"]
+        },
+        //Periscope
+        {
+            "before": ["<space>","p","f","f"],
+            "commands": ["fuzzy-finder.find"]
+        },
+        {
+            "before":["<space","f","/"],
+            "commands": ["fuzzily.fzf"]
+        },
+        //autojump
+        {
+            "before": ["<space>","z"],
+            "commands": ["zoxide-like.jump"]
+        },
+        {
+            "before": ["<space>","c","d"],
+            "commands": ["zoxcode.jump"]
         },
         {
             "before": ["<space>","n"], // Example: New tab
@@ -106,7 +112,7 @@
         },
         {
             "before": ["<space>","p"],
-            "commands": ["workbench.action.showCommands"]
+            "commands": ["workbench.action.showcommands"]
         },
         {
             "before": ["<space>","g","r"],
@@ -115,14 +121,6 @@
         {
             "before": ["<space>","o"],
             "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["<space>","z"],
-            "commands": ["zoxide-like.jump"]
-        },
-        {
-            "before": ["<space>","c","d"],
-            "commands": ["zoxcode.jump"]
         },
         {
             "before": ["<space>","c","f"],
@@ -140,9 +138,6 @@
             "before": ["<space>","w","r","i","t","e"],
             "after": ["g","g","V","G","d","i"]
         },
-        {
-
-        }
     ],
 
 
